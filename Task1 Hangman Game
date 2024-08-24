@@ -1,0 +1,35 @@
+import random
+
+def hangman():
+    words = ['python', 'hangman', 'programming', 'developer', 'code']
+    word = random.choice(words)
+    guessed = []
+    incorrect_guesses = 0
+    max_incorrect_guesses = 6
+
+    print("Welcome to Hangman!")
+    
+    while incorrect_guesses < max_incorrect_guesses:
+        display_word = ''.join([letter if letter in guessed else '_' for letter in word])
+        print(f"Word: {display_word}")
+        print(f"Incorrect guesses: {incorrect_guesses}/{max_incorrect_guesses}")
+        
+        guess = input("Guess a letter: ").lower()
+        
+        if guess in guessed:
+            print("You've already guessed that letter.")
+        elif guess in word:
+            guessed.append(guess)
+            print("Good guess!")
+        else:
+            guessed.append(guess)
+            incorrect_guesses += 1
+            print("Incorrect guess.")
+        
+        if all(letter in guessed for letter in word):
+            print(f"Congratulations! You've guessed the word: {word}")
+            break
+    else:
+        print(f"Game over! The word was: {word}")
+
+hangman()
