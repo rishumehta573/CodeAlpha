@@ -1,0 +1,55 @@
+import nltk
+from nltk.chat.util import Chat, reflections
+import pyjokes
+
+#The list of conversations
+pairs = [
+    [
+        r"my name is (.*)",
+        ["Hello %1, how can I assist you today?",]
+    ],
+    [
+        r"hi|hello|hey",
+        ["Hi there! How are you? What can I do for you today?"]
+    ],
+    [
+        r"(fine|good|well|fine|okay|ok)",
+        ["That's great to hear! What can I assist you with?",]
+    ],
+    [
+        r"(sad|unhappy|angry|frustrated)",
+        ["I'm sorry to hear that. Do you want to heara joke?",]
+    ],
+    [
+        r"what is your name?",
+        ["I am a chatbot created to assist you. You can call me ChatBot.",]
+    ],
+    [
+        r"how are you?",
+        ["I'm just a program, so I don't have feelings, but I'm here to help you!",]
+    ],
+    [
+        r"what can you do?",
+        ["I can help you with various tasks, answer your questions, or just chat with you. What would you like to do?",]
+    ],
+    [
+        r"(tell me a joke|can you tell me a joke)",
+        [pyjokes.get_joke()]
+    ],
+    [
+        r"quit",
+        ["Thank you for chatting with me. Have a great day!", "Goodbye! Feel free to chat with me anytime.", "It was nice talking to you. Bye!"]
+    ],
+    [
+        r"(.*)",
+        ["I'm not sure I understand that.", "Can you clarify?", "I'm here to help. Could you provide more details?"]
+    ],
+]
+
+def chatbot():
+    print("Hi, I'm your friendly chatbot. How can I assist you today?")
+    chat = Chat(pairs, reflections)
+    chat.converse()
+
+if __name__ == "__main__":
+    chatbot()
