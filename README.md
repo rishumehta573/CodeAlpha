@@ -167,3 +167,23 @@ Downloads/
 ├── song.mp3
 ├── assignment.docx
 └── notes.txt
+```
+
+
+```text
+After:
+
+Downloads/
+├── Images/
+│   └── photo.jpg
+│
+├── Documents/
+│   ├── resume.pdf
+│   ├── assignment.docx
+│   └── notes.txt
+│
+├── Videos/
+│   └── video.mp4
+│
+└── Audio/
+    └── song.mp3
