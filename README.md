@@ -72,7 +72,7 @@ Reveal Letter   Reduce Attempts
 Check Win/Loss
          ↓
       Game Ends
-
+```
 
 # 🤖 Text-Based Chatbot using Python
 
@@ -137,7 +137,7 @@ The project uses the following Python libraries:
 import nltk
 from nltk.chat.util import Chat, reflections
 import pyjokes
-
+```
 
 # ⚙️ Task Automation with Python
 
