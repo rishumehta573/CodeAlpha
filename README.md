@@ -72,3 +72,98 @@ Reveal Letter   Reduce Attempts
 Check Win/Loss
          ↓
       Game Ends
+
+
+# 🤖 Text-Based Chatbot using Python
+
+A simple **rule-based text chatbot** developed using Python during my **CodeAlpha Python Development Internship**.
+
+The chatbot interacts with users through the command line and responds to different types of messages using predefined conversation patterns. It uses the **NLTK `Chat` utility** for pattern matching and the **PyJokes** library to generate jokes.
+
+---
+
+## 📌 Project Overview
+
+The objective of this project is to develop a simple conversational chatbot that can understand common user inputs and provide appropriate responses.
+
+The chatbot can:
+
+- 👋 Respond to greetings
+- 🧑 Identify the user's name
+- 😊 Respond to basic mood-related messages
+- 🤖 Tell the user about itself
+- 💬 Explain what it can do
+- 😂 Tell jokes
+- ❓ Handle unknown or unrecognized inputs
+- 👋 End the conversation when the user enters `quit`
+
+This project demonstrates the basic concept of **rule-based conversational AI** using Python.
+
+---
+
+## 🎯 Objectives
+
+The main objectives of this project are:
+
+- Learn the basics of chatbot development.
+- Understand pattern-based text matching.
+- Use Python libraries for conversational applications.
+- Implement predefined responses for different user inputs.
+- Learn how NLTK's `Chat` utility works.
+- Integrate an external library for dynamic joke generation.
+- Build an interactive command-line application.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology / Library | Purpose |
+|----------------------|---------|
+| **Python** | Main programming language |
+| **NLTK** | Chatbot and text pattern matching |
+| **nltk.chat.util.Chat** | Handles rule-based conversations |
+| **reflections** | Handles conversational reflections |
+| **PyJokes** | Generates programming jokes |
+| **Regular Expressions (Regex)** | Matches user input patterns |
+| **Command Line** | User interaction |
+
+---
+
+## 📦 Libraries Used
+
+The project uses the following Python libraries:
+
+```python
+import nltk
+from nltk.chat.util import Chat, reflections
+import pyjokes
+
+
+# ⚙️ Task Automation with Python
+
+A Python-based **File Organization Automation Tool** developed as part of my **CodeAlpha Python Development Internship**.
+
+This project automates the process of organizing files in a folder by identifying their file types and moving them into appropriate folders such as **Images, Documents, Videos, Audio, and Others**.
+
+The project demonstrates how Python can be used to automate repetitive file-management tasks and improve productivity.
+
+---
+
+## 📌 Project Overview
+
+Managing a folder containing hundreds of files manually can be time-consuming and inconvenient.
+
+This project provides a simple solution by automatically scanning a selected directory, identifying files based on their extensions, creating required folders, and moving the files into their respective categories.
+
+For example:
+
+```text
+Before:
+
+Downloads/
+├── photo.jpg
+├── resume.pdf
+├── video.mp4
+├── song.mp3
+├── assignment.docx
+└── notes.txt
